@@ -1,0 +1,38 @@
+// char – variable for a character. 
+// E.g. : 
+char grade = 'A'; 
+
+ 
+// string -- variable for string. 
+// E.g. :  
+string phrase = "Good morning"; 
+
+ 
+// int – variable for integers. 
+// E.g. : 
+int age = 32; 
+
+ 
+// float –  variable for decimal numbers. 
+// E.g. : 
+float rating = 8.7; 
+
+ 
+// double – variable for decimal numbers (more precise than float). 
+// E.g. : 
+double gpa = 3.9; 
+
+ 
+// const – turns variable into a constant, variable cannot be modified later. 
+// E.g. : 
+const int = 5;  
+
+ 
+// bool – variable for true or false statements. 
+// E.g. : 
+bool isMale = true; 
+
+ 
+// Stored variable type followed by *, p and variable name – allows to access memory address of variable. 
+// E.g. : 
+int * pAge = &age   //This is the pointer variable representing the memory address of variable age 
