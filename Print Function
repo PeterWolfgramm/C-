@@ -1,0 +1,10 @@
+// The following code will display Hello world! 
+
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+    cout << "Hello world!" << endl;   // Displays Hello world! 
+    
+    return 0; 
+} 
