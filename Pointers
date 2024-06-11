@@ -1,0 +1,58 @@
+// Example 1:  
+// Output: 0x6afee0 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int age = 19;  
+    double gpa = 2.7;  
+    string name = "Mike";  
+    
+    cout << &age;   // & before the variable name allows to access the pointer of the variable.  
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: 0x6afedc 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int age = 19;  
+    int *pAge = &age;   // A pointer is a variable, its value is the memory address of a variable.  
+    double gpa = 2.7;  
+    double *pGpa = &gpa;  
+    string name = "Mike"; 
+    string *pName = &name;  
+    
+    cout << pAge;   // The pointer of variable age will be displayed.  
+    
+    return 0; 
+} 
+
+ 
+// Example 3:  
+// Output: 19 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int age = 19;  
+    int *pAge = &age;  
+    double gpa = 2.7;  
+    double *pGpa = &gpa;  
+    string name = "Mike"; 
+    string *pName = &name;  
+    
+    cout << *pAge;   // An * before the pointer variable allows to access the stored value. Accessing a stored value is called dereferencing a pointer.  
+    
+    return 0; 
+} 
