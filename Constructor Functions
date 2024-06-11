@@ -1,0 +1,87 @@
+// Example 1:  
+// Output: Creating object 
+
+#include <iostream> 
+using namespace std;  
+
+class Book 
+{ 
+    public:  
+        string title;  
+        string author;  
+        int pages;  
+        Book()   // The constructor function is written after the data of a class.  
+                 // The constructor function repeats for every class instance in the main function.  
+        {
+            cout << "Creating object" << endl;  
+        } 
+}; 
+
+int main() 
+{ 
+    Book book1;  
+    book1.title = "Harry Potter";  
+    book1.author = "JK Rowling";  
+    book1.pages = 500;  
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: Harry Potter 
+
+#include <iostream> 
+using namespace std;  
+
+class Book 
+{ 
+    public:  
+        string title;  
+        string author;  
+        int pages;  
+        Book(string name)   // After each Book name the user inputs name.  
+        { 
+            cout << name << endl;  
+        } 
+}; 
+
+int main() 
+{ 
+    Book book1("Harry Potter");   // Harry Potter is the name that will be displayed.  
+    book1.title = "Harry Potter";  
+    book1.author = "JK Rowling";  
+    book1.pages = 500;  
+    
+    return 0; 
+} 
+
+ 
+// Example 3:  
+// Output: 500 
+
+#include <iostream> 
+using namespace std;  
+
+class Book 
+{ 
+    public:  
+        string title;  
+        string author;  
+        int pages;  
+        Book(string aTitle, string aAuthor, int aPages)   // Declaring different variables the user sets later in an object. 
+        { 
+            title = aTitle;  
+            author = aAuthor;  
+            pages = aPages; 
+        } 
+}; 
+
+int main() 
+{ 
+    Book book1("Harry Potter", "JK Rowling", 500);   // The user inputs data in place of the variables.  
+    
+    cout << book1.pages;  
+    
+    return 0; 
+} 
