@@ -1,0 +1,9 @@
+// The following is the standard format for code in C++ 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+
+    return 0; 
+} 
