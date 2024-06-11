@@ -1,0 +1,80 @@
+// Example 1:  
+/*Output: 1 
+          2 
+          3  
+          4  
+          5*/ 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int index = 1;  
+    
+    while(index <= 5)   // while index is <= 5, the following code will execute. 
+    { 
+        cout << index << endl; 
+        index++;  
+    } 
+    
+    return 0; 
+} 
+
+
+// Example 2:  
+// A do while loop is the same as a while loop, except code is executed before checking a condition. 
+// Output: 6 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int index = 6;  
+    
+    do { 
+        cout << index << endl;   // The index is displayed first. 
+        index++;  
+    } while(index <= 5);   // The index will never be displayed again after checking the condition. 
+    
+    return 0; 
+} 
+
+ 
+// Example 3:  
+// The following code is a guessing game. The user has 3 tries to guess the number 7, otherwise they lose.  
+//Output: Either You Win! or You Lose. 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int secretNum = 7;  
+    int guess;  
+    int guessCount = 0;  
+    int guessLimit = 3;  
+    bool outOfGuesses = false;  
+    
+    while(secretNum != guess && !outOfGuesses) 
+    { 
+        if(guessCount < guessLimit) 
+        { 
+            cout << "Enter guess: ";  
+            cin >> guess; 
+            guessCount++; 
+        }  else { 
+            outOfGuesses = true;  
+        } 
+    } 
+    
+    if(outOfGuesses) 
+    { 
+        cout << "You Lose";  
+    } else { 
+        cout << "You Win!";  
+    } 
+    
+    return 0; 
+} 
