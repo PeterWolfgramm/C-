@@ -1,87 +1,47 @@
-Example1:  
-
- 
-
-//Output: You are not a tall male. 
-
- 
+// Example 1:  
+// Output: You are not a tall male. 
 
 #include <iostream> 
-
 using namespace std;  
 
 int main() 
-
 { 
-
-bool isMale = true;   //isMale is a true or false variable. The value is true. 
-
-bool isTall = false;   //isTall is a true or false variable. The value is false. 
-
- 
-
-if(isMale && isTall)   //&& means and. Both variables must be true.  
-
-{ 
-
-cout << "You are a tall male.";  
-
-} else {   //If one of the variables is false.  
-
-cout << "You are not a tall male.";  
-
+    bool isMale = true;   // isMale is a true or false variable. The value is true. 
+    bool isTall = false;   // isTall is a true or false variable. The value is false. 
+    
+    if(isMale && isTall)   // && means and. Both variables must be true.  
+    { 
+        cout << "You are a tall male.";  
+    } else {   // If one of the variables is false.  
+        cout << "You are not a tall male.";  
+    } 
+    
+    return 0; 
 } 
 
  
-
-return 0; 
-
-} 
-
- 
-
-Example2:  
-
- 
-
-//Output: You are a tall and or male. 
-
- 
+// Example 2:  
+// Output: You are a tall and or male. 
 
 #include <iostream> 
-
 using namespace std;  
 
 int main() 
-
 { 
-
-bool isMale = true;  
-
-bool isTall = false; 
-
- 
-
-if(isMale || isTall)   //|| means or. At least one of the variables must be true.   
-
-{ 
-
-cout << "You are a tall and or male.";  
-
-} else {   //If neither variable is true.  
-
-cout << "You are not a tall male.";  
-
+    bool isMale = true;  
+    bool isTall = false; 
+    
+    if(isMale || isTall)   // || means or. At least one of the variables must be true.   
+    { 
+        cout << "You are a tall and or male.";  
+    } else {   //If neither variable is true.  
+        cout << "You are not a tall male.";  
+    } 
+    
+    return 0; 
 } 
 
  
-
-return 0; 
-
-} 
-
- 
-
 // Example 3:  
 // Output: You are a short male. 
 
