@@ -1,0 +1,18 @@
+// Output: 2 
+
+#include <iostream> 
+using namespace std;  
+
+int main() 
+{ 
+    int numberGrid[3][2] =   // This 2D array contains 3 rows and 2 columns.  
+    { 
+        {1, 2},   // Row 0. 
+        {3, 4},   // Row 1. 
+        {5, 6}   // Row 2.  
+    };  
+    
+    cout << numberGrid[0][1];   // Element at position 0,1 will be displayed.  
+    
+    return 0; 
+} 
