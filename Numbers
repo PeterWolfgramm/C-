@@ -1,155 +1,82 @@
-Example1:  
-
- 
-
-//Output: 30 
-
- 
+// Example 1:  
+// Output: 30 
 
 #include <iostream> 
-
+#include <cmath>
 using namespace std;  
-
 int main() 
-
 { 
-
-cout << (4 + 6) * 3;  
-
- 
-
-return 0;  
-
+    cout << (4 + 6) * 3;  
+    
+    return 0;  
 } 
 
  
-
-Example2:  
-
- 
-
-//Output: 25 
-
- 
+// Example 2:  
+// Output: 25 
 
 #include <iostream> 
-
+#include <cmath>
 using namespace std;  
-
 int main() 
-
 { 
-
-int num = 5;  
-
-num += 20;   //+= 20 adds 20 to variable num. 
-
-cout << num; 
-
- 
-
-return 0;  
-
+    int num = 5;  
+    num += 20;   // += 20 adds 20 to variable num. 
+    cout << num; 
+    
+    return 0;  
 } 
 
  
-
-Example3:  
-
- 
-
+// Example 3:  
 /*Output: 1 
-
-                   2*/ 
-
- 
+          2*/ 
 
 #include <iostream> 
-
+#include <cmath>
 using namespace std;  
-
 int main() 
-
 { 
-
-int num = 10;   //Variable num's initial value is set to 10. 
-
-cout << num % 3 << endl;   //10 is divided by 3, the remainder is 1. 
-
-num++;    //Variable num is now 11 instead of 10. 
-
-cout << num % 3 << endl;   //11 is divided by 3, the remainder is 2. 
-
- 
-
-return 0;  
-
+    int num = 10;   // Variable num's initial value is set to 10. 
+    cout << num % 3 << endl;   // 10 is divided by 3, the remainder is 1. 
+    num++;    // Variable num is now 11 instead of 10. 
+    
+    cout << num % 3 << endl;   // 11 is divided by 3, the remainder is 2. 
+    
+    return 0;  
 } 
 
  
-
-Example4:  
-
- 
-
-//Output: 49 
-
- 
+// Example4:  
+// Output: 49 
 
 #include <iostream> 
-
 #include <cmath> 
-
 using namespace std;  
-
 int main() 
-
 { 
-
-int num1 = 2;  
-
-double num2 = 36.8;  
-
-int A = pow(num1, 3);   //int A is 2^3 = 8. 
-
-double B = sqrt(num2);   //int B is √36.8 = 6.07. 
-
-cout << round(A * B) << endl;   //Result is 8 * 6.07 rounded = 49.  
-
- 
-
-return 0;  
-
+    int num1 = 2;  
+    double num2 = 36.8;  
+    int A = pow(num1, 3);   // int A is 2^3 = 8. 
+    double B = sqrt(num2);   // int B is √36.8 = 6.07. 
+    
+    cout << round(A * B) << endl;   // Result is 8 * 6.07 rounded = 49.  
+    
+    return 0;  
 } 
 
  
-
-Example5:  
-
- 
-
-//Output: 18 
-
-                   9 
-
- 
+// Example5:  
+/*Output: 18 
+          9*/ 
 
 #include <iostream> 
-
 #include <cmath> 
-
 using namespace std;  
-
 int main() 
-
 { 
-
-cout << fmax(3, 18) << endl;   //Displays larger number between 3 and 18.  
-
-cout << fmin(5, 9);   //Displays lesser number between 5 and 9. 
-
- 
-
-return 0; 
-
+    cout << fmax(3, 18) << endl;   // Displays larger number between 3 and 18.  
+    cout << fmin(5, 9);   // Displays lesser number between 5 and 9. 
+    
+    return 0; 
 } 
