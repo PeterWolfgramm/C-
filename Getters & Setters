@@ -1,0 +1,44 @@
+// Output: PG-13 
+
+#include <iostream> 
+using namespace std;  
+
+class Movie 
+{ 
+    private:   // Other functions cannot use private variables.  
+        string rating;    
+    public:   // Other functions can use public variables.  
+        string title;  
+        string director;  
+        
+        Movie(string aTitle, string aDirector, string aRating) 
+        { 
+            title = aTitle;  
+            director = aDirector;  
+            setRating(aRating);  
+        } 
+    
+    void setRating(string aRating)   // This setter function allows only the ratings G, PG, PG-13, and R.  
+    { 
+        if(aRating == "G" || aRating == "PG" || aRating == "PG-13" || aRating == "R") 
+        { 
+            rating = aRating; 
+        } else { 
+            rating = "NR";  
+        } 
+    } 
+    
+    string getRating()   // This getter function allows to return the rating.  
+    { 
+        return rating;  
+    } 
+}; 
+
+int main() 
+{ 
+    Movie avengers("The Avengers", "Joss Whedon", "PG-13"); 
+    
+    cout << avengers.getRating;   // This will display the rating of Movie avengers.  
+    
+    return 0; 
+} 
