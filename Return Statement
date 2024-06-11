@@ -1,0 +1,21 @@
+// Output: 125 
+
+#include <iostream> 
+#include <cmath>
+using namespace std;  
+
+double cube(double num)   // New cube function that will cube a number input. 
+{ 
+    double result = num * num * num;   // The cubed number is contained in the variable result. 
+    
+    return result;   // result is the output variable. 
+} 
+
+int main() 
+{ 
+    double answer = cube(5.0);   // Calling the cube function, input is 5.0. 
+      
+    cout << answer;   // answer is the output variable. 
+    
+    return 0; 
+} 
