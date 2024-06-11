@@ -1,0 +1,43 @@
+// Output: Wednesday 
+
+#include <iostream> 
+using namespace std;  
+
+string getDayOfWeek(int dayNum){ 
+    string dayName;  
+    
+    switch(dayNum){   // Input dayNum will be switched with a corresponding value.  
+    case 0:   // 0 is one of the potential user inputs. 
+        dayName = "Sunday";   // Sunday is the output if the user inputs 0. 
+        break;   // break allows the program to break out of the function if an output is reached.  
+    case 1:  
+        dayName = "Monday"; 
+        break;  
+    case 2: 
+        dayName = "Tuesday";  
+        break;  
+    case 3:  
+        dayName = "Wednesday"; 
+        break;  
+    case 4: 
+        dayName = "Thursday";  
+        break;  
+    case 5:  
+        dayName = "Friday"; 
+        break;  
+    case 6: 
+        dayName = "Saturday";  
+        break;  
+    default:   // default is executed if none of the cases are executed.  
+        dayName = "Invalid Day Number";  
+    
+    } 
+    return dayName;  
+} 
+
+int main() 
+{ 
+    cout << getDayOfWeek(3);   // Displays which dayName corresponds with dayNum 3. 
+    
+    return 0; 
+} 
