@@ -1,0 +1,3 @@
+count << "Hello world" << endl;   /*This will display the text Hello world.*/ 
+
+count << "Hello world" << endl;   // This will display the text Hello world. 
