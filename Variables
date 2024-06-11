@@ -1,0 +1,19 @@
+/*The following code displays There once was a man named George 
+                              He was 70 years old 
+                              He liked the name George 
+                              But did not like being 70*/ 
+
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+    string charName = "George";   // String variable stores George 
+    int charAge = 70;   // Integer variable stores 70 
+    
+    cout << "There once was a man named " << charName << endl;   // charName stores George 
+    cout << "He was " << charAge << " years old" << endl;   // charAge stores 70 
+    cout << "He liked the name " << charName << endl; 
+    cout << "But did not like being " << charAge << endl; 
+    
+    return 0; 
+} 
