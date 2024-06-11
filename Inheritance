@@ -1,0 +1,50 @@
+/*Output: The chef makes chicken 
+          The chef makes chicken  
+          The chef makes pizza*/ 
+
+#include <iostream> 
+using namespace std;  
+
+class Chef 
+{ 
+    public:  
+        void makeChicken() 
+        { 
+            cout << "The chef makes chicken" << endl;  
+        } 
+        void makeSalad() 
+        { 
+            cout << "The chef makes salad" << endl;  
+        } 
+        void makeSpecialDish() 
+        { 
+            cout << "The chef makes BBQ ribs" << endl;  
+        } 
+}; 
+    
+class ItalianChef : public Chef   // : public Chef allows ItalianChef to inherit the attributes of Chef. 
+{ 
+    public:  
+        void makePasta() 
+        { 
+            cout << "The chef makes pasta" << endl;  
+        } 
+        void makeSpecialDish()   // This makeSpecialDish function overrides the previous makeSpecialDish function in class Chef. 
+        { 
+            cout << "The chef makes pizza" << endl;  
+        } 
+}; 
+
+int main() 
+{ 
+    Chef chef;  
+    chef.makeChicken();  
+    
+    ItalianChef italianChef;  
+    italianChef.makeChicken();  
+    
+    ItalianChef italianChef;  
+    italianChef.makeSpecialDish();  
+    
+    return 0; 
+} 
