@@ -1,0 +1,88 @@
+// Example 1:  
+// Output: You are X years old 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    int age;   // Declares the variable age that will be used later. 
+    
+    cout << "Enter your age: ";   // The user is prompted to enter their age. 
+    
+    cin >> age;   // The user inputs how old they are after the prompt. 
+    
+    cout << "You are " << age << " years old";   // Resultant statement.  
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: Hello, X 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string name;   // Declares the variable name that will be used later. 
+    
+    cout << "Enter your name: ";   // The user is prompted to enter their name. 
+    getline(cin, name);   // getline is a command that allows the user to input string. 
+                          // cin allows for input. name is the variable that stores the input. 
+    
+    cout << "Hello, " << name;   // Resultant statement. 
+    
+    return 0; 
+} 
+
+ 
+// Example 3:  
+// The code below functions as a calculator that adds two decimal numbers.  
+// Output: sum of inputs X and Y: X + Y 
+
+#include <iostream> 
+#include <cmath> 
+using namespace std;  
+int main() 
+{ 
+    double num1, num2;   // Two of the same type of variables are declared. 
+    
+    cout << "Enter first number: ";  
+    cin >> num1;   // User inputs first number. 
+    
+    cout << "Enter second number: ";  
+    cin >> num2;   // User inputs second number. 
+    
+    cout << num1 + num2;   // Result is the sum of the two numbers.  
+    
+    return 0; 
+} 
+
+ 
+// Example 4:  
+// The code below functions as a simple Mad Libs game. 
+/*Output: Roses are X 
+          X are blue 
+          I love X*/
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string color, pluralNoun, celebrity;   // Declares the variables color, pluralNoun, and celebrity. 
+    
+    cout << "Enter a color: ";  
+    getline(cin, color);   // User inputs a color. 
+    
+    cout << "Enter a plural noun: ";  
+    getline(cin, pluralNoun);   // User inputs a plural noun. 
+    
+    cout << "Enter a celebrity: ";  
+    getline(cin, celebrity);   // User inputs a celebrity. 
+    
+    cout << "Roses are " << color << endl;   // Next three lines are the result. 
+    cout << pluralNoun << " are blue" << endl;  
+    cout << "I love " << celebrity << endl;  
+    
+    return 0; 
+} 
