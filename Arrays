@@ -1,0 +1,29 @@
+// Example 1:  
+// Output: 15 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    int luckyNums[] = {4, 8, 15, 16, 23, 42};   // Array luckyNums stores 6 integers. 
+    
+    cout << luckyNums[2];   // Displays the value at index position 2. 
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: 100 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    int luckyNums[20] = {4, 8, 15, 16, 23, 42};   // [20] of luckyNums[20] means the array can hold 20 values. 
+    int luckyNums[10] = 100;   // The value at index position 10 is set to 100. 
+    
+    cout << luckyNums[10];   // Displays the value at index position 10. 
+    
+    return 0; 
+} 
