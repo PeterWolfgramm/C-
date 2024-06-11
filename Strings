@@ -1,0 +1,80 @@
+// Example 1: 
+// Output: Hello world 
+
+#include <iostream> 
+using namespace std; 
+int main() 
+{ 
+    string phrase = "Hello world"; 
+    
+    cout << phrase << endl;   // << endl just finishes the line, it is not necessary. 
+    
+    return 0; 
+} 
+
+ 
+// Example 2: 
+// .length() function displays total amount of characters in the string.  
+// Output: 15 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string phrase = "Hello world"; 
+    
+    cout << phrase.length();   // .length() calls the length function to display total number of characters in the string. 
+    
+    return 0; 
+} 
+
+
+// Example 3: 
+// .length[] function will display the character of a particular index position. 
+// Output: H 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string phrase = "Hello world"; 
+    cout << phrase.length[0];  // .length[0] will display the character at index position 0. 
+    
+    return 0; 
+} 
+
+ 
+// Example 4:  
+// .find() function will show at what index position a certain piece of string begins. 
+// Output: 6 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string phrase = "Hello world"; 
+    
+    cout << phrase.find("world", 0);   // .find() function will find where a piece of string begins. 
+                                       // For ("world", 0), world will be searched starting with index position 0. The result is the index position of w in world. 
+    
+    return 0; 
+} 
+
+ 
+// Example 5:  
+// .substr() function will display part of a string given its' starting index position and total characters. 
+// Output: ello 
+
+#include <iostream> 
+using namespace std;  
+int main() 
+{ 
+    string phrase = "Hello world"; 
+    
+    cout << phrase.substr(1, 4);   // .substr() function will display part of a string. 
+                                   /*In (1, 4) of .substr(1, 4);, 1 represents the starting index position. 
+                                   4 represents how many characters  
+                                   will be displayed from the starting position.*/ 
+    
+    return 0; 
+} 
