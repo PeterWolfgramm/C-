@@ -1,0 +1,61 @@
+// Example 1:  
+// Output: Hello User 
+
+#include <iostream> 
+using namespace std;  
+
+void sayHi() 
+{ 
+    cout << "Hello User";   // This new function will display Hello User. 
+} 
+
+int main() 
+{ 
+    sayHi();   // The function is called to perform its task. 
+    
+    return 0; 
+} 
+
+ 
+// Example 2:  
+// Output: Hello Mike, you are 45 
+
+#include <iostream> 
+using namespace std;  
+
+void sayHi(string name, int age)   // The function will require a name and age input. 
+{ 
+    cout << "Hello " << name << ", you are " << age;    
+} 
+
+int main() 
+{ 
+    sayHi("Mike", 45);   // The function is called, the variable inputs Mike and 45 are given. 
+    
+    return 0; 
+} 
+
+ 
+// Example 3:  
+/*Output: Hello Mike, you are 45 
+          Hello Oscar, you are 11 
+          Hello John, you are 60*/ 
+
+#include <iostream> 
+using namespace std;  
+
+void sayHi(string name, int age);   // The function is declared, it appears later in the code. 
+
+int main() 
+{ 
+    sayHi("Mike", 45);   // The function is called, the variable inputs are given for the next 3 lines. 
+    sayHi("Oscar", 11); 
+    sayHi("John", 60); 
+    
+    return 0; 
+} 
+
+void sayHi()   // The called function. 
+{ 
+    cout << "Hello " << name << ", you are " << age << endl;  
+} 
