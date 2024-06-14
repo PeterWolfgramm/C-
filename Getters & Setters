@@ -38,7 +38,7 @@ int main()
 { 
     Movie avengers("The Avengers", "Joss Whedon", "PG-13"); 
     
-    cout << avengers.getRating;   // This will display the rating of Movie avengers.  
+    cout << avengers.getRating();   // This will display the rating of Movie avengers.  
     
     return 0; 
 } 
