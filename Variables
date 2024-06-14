@@ -1,7 +1,7 @@
-/*The following code displays There once was a man named George 
-                              He was 70 years old 
-                              He liked the name George 
-                              But did not like being 70*/ 
+/*Output: There once was a man named George 
+          He was 70 years old 
+          He liked the name George 
+          But did not like being 70*/ 
 
 #include <iostream> 
 using namespace std; 
