@@ -30,7 +30,7 @@ int main()
 
 
 // Example 3: 
-// .length[] function will display the character of a particular index position. 
+// .at() function will display the character of a particular index position. 
 // Output: H 
 
 #include <iostream> 
@@ -38,7 +38,7 @@ using namespace std;
 int main() 
 { 
     string phrase = "Hello world"; 
-    cout << phrase.length[0];  // .length[0] will display the character at index position 0. 
+    cout << phrase.at(0);  // .at(0) will display the character at index position 0. 
     
     return 0; 
 } 
