@@ -40,10 +40,9 @@ int main()
     Chef chef;  
     chef.makeChicken();  
     
-    ItalianChef italianChef;  
-    italianChef.makeChicken();  
-    
-    ItalianChef italianChef;  
+    ItalianChef italianChef;
+
+    italianChef.makeChicken();    
     italianChef.makeSpecialDish();  
     
     return 0; 
