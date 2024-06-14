@@ -21,7 +21,7 @@ int main()
 
  
 // Example 2:  
-// Output: You are a tall and or male. 
+// Output: You are tall and or male. 
 
 #include <iostream> 
 using namespace std;  
@@ -33,7 +33,7 @@ int main()
     
     if(isMale || isTall)   // || means or. At least one of the variables must be true.   
     { 
-        cout << "You are a tall and or male.";  
+        cout << "You are tall and or male.";  
     } else {   //If neither variable is true.  
         cout << "You are not a tall male.";  
     } 
@@ -106,7 +106,8 @@ using namespace std;
 int main() 
 { 
     int num1, num2;  
-    char op;  
+    char op; 
+    int result; 
     
     cout << "Enter first number: ";  
     cin >> num1;  
