@@ -21,7 +21,7 @@ using namespace std;
 int main() 
 { 
     int luckyNums[20] = {4, 8, 15, 16, 23, 42};   // [20] of luckyNums[20] means the array can hold 20 values. 
-    int luckyNums[10] = 100;   // The value at index position 10 is set to 100. 
+    luckyNums[10] = 100;   // The value at index position 10 is set to 100. 
     
     cout << luckyNums[10];   // Displays the value at index position 10. 
     
