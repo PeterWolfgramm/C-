@@ -10,7 +10,7 @@ using namespace std;
 
 int main() 
 { 
-    for(int index = 1; int index <= 5; index++)   // index is set to 1. While index is <= 5, the code below will run. After each loop, index will increment. 
+    for(int index = 1; index <= 5; index++)   // index is set to 1. While index is <= 5, the code below will run. After each loop, index will increment. 
     { 
         cout << index << endl;  
     } 
@@ -33,7 +33,7 @@ int main()
 { 
     int nums[] = {1, 2, 5, 7, 3}; 
     
-    for(int index = 0; int index < 5; index++) 
+    for(int index = 0; index < 5; index++) 
     { 
         cout << nums[index] << endl;   // Each index position in the array will be displayed.  
     } 
@@ -56,7 +56,7 @@ int power(int baseNum, int powNum)
     
     for(int i = 0; i < powNum; i++)   // 1 will be multiplied by baseNum as long as variable i is less than powNum.
     { 
-        result = result * baseNum   // The result is equal to 1 * baseNum as many times as what powNum is equal to.  
+        result = result * baseNum;   // The result is equal to 1 * baseNum as many times as what powNum is equal to.  
     } 
     return result;  
 } 
