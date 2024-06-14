@@ -19,9 +19,9 @@ int main()
     book1.pages = 500;  
     
     Book book2;  
-    book1.title = "Lord of the Rings";  
-    book1.author = "Tolkein";  
-    book1.pages = 700; 
+    book2.title = "Lord of the Rings";  
+    book2.author = "Tolkein";  
+    book2.pages = 700; 
     
     cout << book1.title;  
     
