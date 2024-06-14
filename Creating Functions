@@ -55,7 +55,7 @@ int main()
     return 0; 
 } 
 
-void sayHi()   // The called function. 
+void sayHi(string name, int age)   // The called function. 
 { 
     cout << "Hello " << name << ", you are " << age << endl;  
 } 
