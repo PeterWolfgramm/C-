@@ -15,7 +15,7 @@ int main()
  
 // Example 2: 
 // .length() function displays total amount of characters in the string.  
-// Output: 15 
+// Output: 11 
 
 #include <iostream> 
 using namespace std;  
