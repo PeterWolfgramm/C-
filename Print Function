@@ -1,4 +1,4 @@
-// The following code will display Hello world! 
+// Output: Hello world! 
 
 #include <iostream> 
 using namespace std; 
