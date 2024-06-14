@@ -47,7 +47,7 @@ int main()
 } 
 
  
-// Example4:  
+// Example 4:  
 // Output: 49 
 
 #include <iostream> 
@@ -66,9 +66,9 @@ int main()
 } 
 
  
-// Example5:  
+// Example 5:  
 /*Output: 18 
-          9*/ 
+          5*/ 
 
 #include <iostream> 
 #include <cmath> 
